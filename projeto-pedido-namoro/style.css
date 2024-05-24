@@ -1,0 +1,65 @@
+@import url(styles/pagina.css);
+
+:root {
+    --cor-de-fundo: #ff6ac3;
+    --cor-secundaria: #aa337c;
+    --cor-terciaria: #681d4a;
+    --branco: #ffffff;
+    --cor-fundo-secundario: #ffc1e6;
+    --fonte-principal: "Poetsen One";
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0; /* Começa completamente transparente */
+    }
+    100% {
+      opacity: 1; /* Termina completamente visível */
+    }
+  }
+  
+.painel {
+    font-family: var(--fonte-principal); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-position: center; /* Centraliza a imagem */
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 45px;
+    animation: fadeIn 1s ease-in-out; /* Aplica a animação de aparecimento gradual */
+}
+
+.painel_final {
+  font-family: var(--fonte-principal); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+  background-position: center; /* Centraliza a imagem */
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px;
+  animation: fadeIn 1s ease-in-out; /* Aplica a animação de aparecimento gradual */
+}
+
+.paginaprincipal {
+    background-color: var(--cor-de-fundo);
+  }
+
+.paginadois {
+    background-image: url(img/background2.jpg);
+ }
+
+
+.paginatres {
+    background-image: url(img/background3.jpg);
+}
+
+.paginaquatro {
+    background-image: url(img/background4.jpg);
+}
+
+.paginaprincipal,
+.paginadois,
+.paginatres,
+.paginaquatro {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
